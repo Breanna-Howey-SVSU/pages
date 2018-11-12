@@ -81,7 +81,7 @@ function addForm() {
 	// create a new label element, and append to fieldset1
 	var newelement = document.createElement("label");
 	newelement.setAttribute("for","givenName"+currentLine);
-	var textnode = document.createTextNode("Given");
+	var textnode = document.createTextNode("Given Name");
 	newelement.appendChild(textnode);
 	var fieldset1 = document.getElementById("fieldset1");
 	fieldset1.appendChild(newelement);
@@ -98,11 +98,10 @@ function addForm() {
 	fieldset1.appendChild(newelement);
 
 	// add more fields 
-	addField("fieldset1", "surName", "Sur", "text", "Doe", inputWidth);
+	addField("fieldset1", "surName", "Sur Name", "text", "Doe", inputWidth);
 	addField("fieldset1", "solarBirthday", "Solar Birthday", "text", "15", inputWidth);
 	addField("fieldset1", "solarBirthMonth", "Solar Birth Month", "text", "September", inputWidth);
 	addField("fieldset1", "solarBirthYear", "Solar Birth Year", "text", "1999", inputWidth);
-	//addField("fieldset1", "age", "Age", "number", "18", inputWidth);
 	addField("fieldset1", "country", "Country", "text", "USA", inputWidth);
 
 	// add line break 
@@ -121,8 +120,8 @@ function addLine () {
 	// precondition: inputWidth global variable must be set
 	// precondition: call from addForm() so HTML element with id="fieldset1" exists
 	
-	addField("fieldset1", "givenName", "Given", "text", "Jane", inputWidth);
-	addField("fieldset1", "surName", "Sur", "text", "Doe", inputWidth);
+	addField("fieldset1", "givenName", "Given Name", "text", "Jane", inputWidth);
+	addField("fieldset1", "surName", "Sur Name", "text", "Doe", inputWidth);
 	addField("fieldset1", "solarBirthday", "Solar Birthday", "text", "15", inputWidth);
 	addField("fieldset1", "solarBirthMonth", "Solar Birth Month", "text", "September", inputWidth);
 	addField("fieldset1", "solarBirthYear", "Solar Birth Year", "text", "1999", inputWidth);
